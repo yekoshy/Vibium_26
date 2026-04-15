@@ -1,0 +1,19 @@
+{
+  "name": "vibium_26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:html": "node --test --test-reporter=tap ./test/SevenCharVal/vibium_test.js | tap-html > report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mochawesome": "^7.1.4",
+    "vibium": "^26.3.18",
+    "vibium-monorepo": "github:VibiumDev/vibium#main"
+  }
+}
