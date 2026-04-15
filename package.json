@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:html": "node --test --test-reporter=tap ./test/SevenCharVal/vibium_test.js | tap-html > report.html"
+    "test:xml": "node --test --test-reporter=junit --test-reporter-destination=report.xml ./test/SevenCharVal/vibium_test.js",
+    "report:html": "npx xunit-viewer -r report.xml -o report.html",
+    "test": "npm-run-all --continue-on-error test:xml report:html"
   },
   "keywords": [],
   "author": "",
